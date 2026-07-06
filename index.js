@@ -2,8 +2,7 @@
 const express = require("express");
 const app = express();
 // 2. สร้างเส้นทาง (Route) สําหรับหน้าแรก
-// เมื่อมีผู้ใช้พิมพ์ URL เข้ามาที่หน้าแรก ("/") Server จะรับคําร้องขอ (request) และตอบกลับ
-(response)
+// เมื่อมีผู้ใช้พิมพ์ URL เข้ามาที่หน้าแรก ("/") Server จะรับคําร้องขอ (request) และตอบกลับ(response)
 app.get("/", (request, response) => {
 // 3. สิ่งที่ Server จะส่งกลับไปแสดงผลบนหน้าจอผู้ใช้ (ใช้ภาษา HTML ในการจัดรูปแบบ)
 response.send(`

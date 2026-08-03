@@ -1,4 +1,4 @@
-aconst http = require('http');
+const http = require('http');
 const url = require('url');
 const querystring = require('querystring');
 // 1. เรียกใชงาน Pool จากไลบรารี pg สําหรับจัดการการเชื่อมตอฐานขอมูล
@@ -521,6 +521,10 @@ const server = http.createServer(async (req, res) => {
     res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
     res.end('<h1>404 - ไม่พบหน้านี้</h1>');
   }
+});
+
+server.listen(port, () => {
+  console.log(`Server is running on port: ${port}`);
 });
 
 server.listen(port, () => {

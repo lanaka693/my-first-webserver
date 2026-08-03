@@ -526,8 +526,3 @@ const server = http.createServer(async (req, res) => {
 server.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
-
-server.listen(port, () => {
-  console.log(`Server is running on port: ${port}`);
-});
-
